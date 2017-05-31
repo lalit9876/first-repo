@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head
+         content must come *after* these tags -->
+<title>Profile Detail Page</title>
+<link href="fonts/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet">
+<link href="css/appDetails.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<section class="main-detail-wrapper" ng-app="mainDetailApp"
+		ng-controller="mainDetailController">
+		<header class="head-detail-wrapper"
+			ng-style="{'background-image':'url({{sortArr.imageL}})'}">
+			<div class="head-left">
+				<a href="ProfileList.html"><div class="back-icon">
+						<i class="fa fa-angle-left icon-white" aria-hidden="true"></i>
+					</div></a>
+				<div class="head-left-content">{{sortArr.fullName}}</div>
+			</div>
+		</header>
+		<div class="content-wrapper">
+			<ul class="user-details-wrapper">
+				<li class="user-detail-list">
+					<div class="left-content">
+						<span class="left-content1">{{sortArr.homePhone}}</span><br>
+						<span class="left-content2">Home phone</span>
+					</div>
+					<div class="right-content">
+						<div class="ellipsis-list-icon">
+							<i class="fa fa-phone icon-white"></i>
+						</div>
+						<div class="ellipsis-list-icon">
+							<i class="fa fa-comment-o icon-white"></i>
+						</div>
+					</div>
+				</li>
+				<li class="user-detail-list">
+					<div class="left-content">
+						<span class="left-content1">{{sortArr.workPhone}}</span><br>
+						<span class="left-content2">Work Phone</span>
+					</div>
+					<div class="right-content">
+						<div class="ellipsis-list-icon">
+							<i class="fa fa-phone icon-white"></i>
+						</div>
+						<div class="ellipsis-list-icon">
+							<i class="fa fa-comment-o icon-white"></i>
+						</div>
+					</div>
+				</li>
+				<li class="user-detail-list">
+					<div class="left-content">
+						<span class="left-content1">{{sortArr.email}}</span><br> <span
+							class="left-content2">E-mail</span>
+					</div>
+					<div class="right-content">
+						<div class="ellipsis-list-icon">
+							<i class="fa fa-envelope-o icon-white"></i>
+						</div>
+					</div>
+				</li>
+				<li class="user-detail-list">
+					<div class="left-content">
+						<span class="left-content1">{{sortArr.site}}</span><br> <span
+							class="left-content2">Site</span>
+					</div>
+					<div class="right-content">
+						<div class="ellipsis-list-icon">
+							<i class="fa fa-windows icon-white"></i>
+						</div>
+					</div>
+				</li>
+				<li class="user-detail-list">
+					<div class="left-content">
+						<span class="left-content1">{{sortArr.skypeName}}</span><br>
+						<span class="left-content2">skype</span>
+					</div>
+					<div class="right-content">
+						<div class="ellipsis-list-icon">
+							<i class="fa fa-skype icon-white"></i>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<footer class="footer-container">&copy; COPYRIGHT THINK DESIGN COLLABORATIVE</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/appDetails.js"></script>
+	<script src="js/appController.js"></script>
+</body>
+</html>
